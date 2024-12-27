@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 #define SIZE 100
 int main()
 {
