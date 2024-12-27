@@ -1,12 +1,13 @@
 #include <stdio.h>
+#define SIZE 100
 int main()
 {
-    int n, i, j;
-    double x[100], y[100], xp, yp = 0, p;
+    int n;
+    double x[SIZE], y[SIZE], xp, yp = 0;
     printf("Enter number of data:\n");
     scanf("%d", &n);
     printf("Enter data:\n");
-    for (i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         printf("x[%d] = ", i);
         scanf("%lf", &x[i]);
@@ -15,10 +16,10 @@ int main()
     }
     printf("Enter interpolation point:\n");
     scanf("%lf", &xp);
-    for (i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
-        p = 1;
-        for (j = 0; j < n; j++)
+        double p = 1;
+        for (int j = 0; j < n; j++)
         {
             if (j != i)
             {

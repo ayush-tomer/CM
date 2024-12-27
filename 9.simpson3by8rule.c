@@ -3,8 +3,8 @@
 #define f(x) (1 / (x))
 int main()
 {
-    int n, i;
-    double a, b, h, x, sum = 0, integral;
+    int n;
+    double a, b, h, sum = 0, integral;
     printf("Enter multiple of 3 as number of sub-intervals:\n");
     scanf("%d", &n);
     printf("Enter lower limit:\n");
@@ -12,9 +12,9 @@ int main()
     printf("Enter upper limit:\n");
     scanf("%lf", &b);
     h = fabs(b - a) / n;
-    for(i = 1; i < n; i++)
+    for(int i = 1; i < n; i++)
     {
-        x = a + i * h;
+        double x = a + i * h;
         if(i % 3 == 0)
         {
             sum += 2 * f(x);

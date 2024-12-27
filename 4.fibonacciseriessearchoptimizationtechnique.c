@@ -11,8 +11,8 @@ int fibonacci(int n)
 }
 int main()
 {
-    int n, i;
-    double a, b, x1, x2, f1, f2, e;
+    int n, fib, fib1, fib2;
+    double a, b, e, min;
     printf("Enter the lower limit:\n");
     scanf("%lf", &a);
     printf("Enter the upper limit:\n");
@@ -21,15 +21,15 @@ int main()
     scanf("%d", &n);
     printf("Enter the tolerance:\n");
     scanf("%lf", &e);
-    int fib = fibonacci(n);
-    int fib1 = fibonacci(n - 1);
-    int fib2 = fibonacci(n - 2);
-    for(i = 1; i < n; i++)
+    fib = fibonacci(n);
+    fib1 = fibonacci(n - 1);
+    fib2 = fibonacci(n - 2);
+    for(int i = 1; i < n; i++)
     {
-        x1 = a + ((double)fib2 / fib) * (b - a);
-        x2 = a + ((double)fib1 / fib) * (b - a);
-        f1 = f(x1);
-        f2 = f(x2);
+        double x1 = a + ((double)fib2 / fib) * (b - a);
+        double x2 = a + ((double)fib1 / fib) * (b - a);
+        double f1 = f(x1);
+        double f2 = f(x2);
         if(f1 > f2)
         {
             a = x1;
@@ -49,7 +49,7 @@ int main()
             break;
         }
     }
-    double min = (a + b) / 2.0;
+    min = (a + b) / 2.0;
     printf("The minimum value of the function is approximately at x = %lf\n", min);
     printf("f(x) = %lf", f(min));
     return 0;

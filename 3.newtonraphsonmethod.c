@@ -5,7 +5,7 @@
 int main()
 {
     int step = 1, maxsteps;
-    double x0, x1, f0, f1, g0, e;
+    double x0, x1, f1, e;
     printf("Enter initial guess:\n");
     scanf("%lf", &x0);
     printf("Enter tolerable error:\n");
@@ -15,8 +15,8 @@ int main()
     printf("Step\t\tx0\t\tf(x0)\t\tx1\t\tf(x1)\n");
     do
     {
-        f0 = f(x0);
-        g0 = g(x0);
+        double f0 = f(x0);
+        double g0 = g(x0);
         if(g0 == 0)
         {
             printf("Mathematical Error.");

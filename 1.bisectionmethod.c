@@ -3,7 +3,6 @@
 #define f(x) (cos(x) - (x) * exp(x))
 int main()
 {
-    int step = 1;
     double x0, x1, x2, f0, f1, f2, e;
     up:
     printf("Enter 2 initial guesses:\n");
@@ -20,6 +19,7 @@ int main()
     printf("Step\t\tx0\t\tx1\t\tx2\t\tf(x2)\n");
     do
     {
+        int step = 1;
         x2 = (x0 + x1) / 2;
         f2 = f(x2);
         printf("%d\t\t%lf\t%lf\t%lf\t%lf\n", step, x0, x1, x2, f2);
