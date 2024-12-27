@@ -28,7 +28,7 @@ int main()
         x0 = x1;
         step++;
     }
-    while (fabs(f1) > e && step <= maxsteps);
+    while(fabs(f1) > e && step <= maxsteps);
     printf("Root is: %lf", x1);
     return 0;
 }
