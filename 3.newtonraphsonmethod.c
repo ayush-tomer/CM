@@ -6,11 +6,11 @@ int main()
 {
     int step = 1, maxsteps;
     double x0, x1, f0, f1, g0, e;
-    printf("Enter initial guess: ");
+    printf("Enter initial guess:\n");
     scanf("%lf", &x0);
-    printf("Enter tolerable error: ");
+    printf("Enter tolerable error:\n");
     scanf("%lf", &e);
-    printf("Enter maximum number of iterations: ");
+    printf("Enter maximum number of iterations:\n");
     scanf("%d", &maxsteps);
     printf("Step\t\tx0\t\tf(x0)\t\tx1\t\tf(x1)\n");
     do

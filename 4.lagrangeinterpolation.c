@@ -3,7 +3,7 @@ int main()
 {
     int n, i, j;
     double x[100], y[100], xp, yp = 0, p;
-    printf("Enter number of data: ");
+    printf("Enter number of data:\n");
     scanf("%d", &n);
     printf("Enter data:\n");
     for (i = 0; i < n; i++)
@@ -13,7 +13,7 @@ int main()
         printf("y[%d] = ", i);
         scanf("%lf", &y[i]);
     }
-    printf("Enter interpolation point: ");
+    printf("Enter interpolation point:\n");
     scanf("%lf", &xp);
     for (i = 0; i < n; i++)
     {

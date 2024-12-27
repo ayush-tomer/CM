@@ -5,11 +5,11 @@ int main()
 {
     int n, i;
     double a, b, h, x, sum = 0, integral;
-    printf("Enter multiple of 3 as number of sub-intervals: ");
+    printf("Enter multiple of 3 as number of sub-intervals:\n");
     scanf("%d", &n);
-    printf("Enter lower limit: ");
+    printf("Enter lower limit:\n");
     scanf("%lf", &a);
-    printf("Enter upper limit: ");
+    printf("Enter upper limit:\n");
     scanf("%lf", &b);
     h = fabs(b - a) / n;
     for(i = 1; i < n; i++)

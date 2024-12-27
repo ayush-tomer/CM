@@ -3,7 +3,7 @@ int main()
 {
     int n, i, j;
     double x[100], y[100], p[100][100], k, f, f1;
-    printf("Enter number of observations: ");
+    printf("Enter number of observations:\n");
     scanf("%d", &n);
     printf("Enter corresponding values of x:\n");
     for(i = 0; i < n; i++)
@@ -16,7 +16,7 @@ int main()
         scanf("%lf", &y[i]);
         p[i][0] = y[i];
     }
-    printf("Enter the value of x for which you want to find y: ");
+    printf("Enter the value of x for which you want to find y:\n");
     scanf("%lf", &k);
     for(j = 1; j < n; j++)
     {

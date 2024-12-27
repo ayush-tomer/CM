@@ -6,9 +6,9 @@ int main()
     int step = 1;
     double x0, x1, x2, f0, f1, f2, e;
     up:
-    printf("Enter 2 initial guesses: ");
+    printf("Enter 2 initial guesses:\n");
     scanf("%lf %lf", &x0, &x1);
-    printf("Enter tolerable error: ");
+    printf("Enter tolerable error:\n");
     scanf("%lf", &e);
     f0 = f(x0);
     f1 = f(x1);

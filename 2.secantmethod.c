@@ -6,11 +6,11 @@ int main()
     int step = 1, maxsteps;
     double x0, x1, x2, f0, f1, f2, e;
     up:
-    printf("Enter 2 initial guesses: ");
+    printf("Enter 2 initial guesses:\n");
     scanf("%lf %lf", &x0, &x1);
-    printf("Enter tolerable error: ");
+    printf("Enter tolerable error:\n");
     scanf("%lf", &e);
-    printf("Enter maximum number of iterations: ");
+    printf("Enter maximum number of iterations:\n");
     scanf("%d", &maxsteps);
     f0 = f(x0);
     f1 = f(x1);
@@ -32,6 +32,6 @@ int main()
         step++;
     }
     while(fabs(f2) > e && step <= maxsteps);
-    printf("Root is: %lf\n", x2);
+    printf("Root is: %lf", x2);
     return 0;
 }
